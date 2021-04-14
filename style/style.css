@@ -425,12 +425,11 @@ a {
 
 .redesSociais{
     line-height: 50px;
-    text-align: right;
-    float: right;
-    align-items: flex-end;
+
 }
 
 .redeSocial {
     float: right;
-    margin-left: 70%;
+    margin-left: auto;
+    margin-right: 10px;
 }
