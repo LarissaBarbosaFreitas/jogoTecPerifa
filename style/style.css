@@ -138,12 +138,7 @@ body {
 
 }
 
-#score {
-    color: black;
-    font-family: botao;
-    text-align: center;
-    font-size: 40px;
-}
+
 
 /*GAME OVER*/
 .titulo {
@@ -205,6 +200,9 @@ body {
     color: rgb(31, 31, 31);
     text-align: center;
     line-height: 30px;
+    font-family: botao;
+    font-size: 40px;
+    }
 }
 
 .textoGameOver {

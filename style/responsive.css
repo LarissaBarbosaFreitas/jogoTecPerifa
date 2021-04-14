@@ -49,3 +49,79 @@ body .cactos {
 }
 
 }
+
+@media screen and (max-height:500px) {
+    body .background{
+        height:250px;
+        background-image: url(../img/fundo3.gif);
+    }
+
+    body .fundoJogo{
+        height: 300px;
+
+    }
+    
+    body .caixaInicio{
+        line-height:100px;
+    }
+
+    /*GAME OVER*/
+    body .titulo {
+        text-align: center;
+        color: rgb(31, 31, 31);
+    
+        margin-top: 5px;
+    
+        font-family: 'Bungee', cursive;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        display: flex;
+        font-weight: bold;
+
+        border: 0;
+    
+    }
+
+    body .caixaPontos{
+        width: 120px;
+        height: 100px;
+        margin-bottom: 10px;
+
+    }
+
+    body .pontuacaoTexto{
+        font-size: 20px;
+    }
+
+    body #score {
+        font-size: 40px;
+    }
+
+    .caixaTexto .botoes{
+        flex-direction: row;
+    }
+
+   body .botaoPrincipal{
+        height: 35px;
+        width: 200px;
+
+        border: none;
+        border-radius: 15px;
+        font-size: 15px;
+
+    }
+
+    body .textoBotaoPrincipal{
+        
+        font-size: 20px;
+        line-height:35px;
+    }
+
+    body .botaoPrincipal :hover{
+        background: black;
+        color: blanchedalmond;
+        border-radius: 15px;
+    }
+    }
+}

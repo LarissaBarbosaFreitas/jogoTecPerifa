@@ -4,6 +4,7 @@ let pulando = false;
 let posicao = 0;
 let pontuacao = 0;
 
+
 /*INTERAÇÃO DO DINOSSAURO*/ 
 
 document.addEventListener('touchend', movimento);
@@ -51,8 +52,24 @@ function criarCactos() {
     let aleatorio = Math.random() * 5000; //random serve para gerar um número aleatório
     let posicaoCactos = 1500;
 
+    if(window.matchMedia("(max-width:400px)").matches){
+        posicaoCactos = 300;
+    }
+
+    if(window.matchMedia("(max-width:600px)").matches){
+        posicaoCactos = 400;
+    }
+
     if(window.matchMedia("(max-width:800px)").matches){
         posicaoCactos = 600;
+    }
+
+    if(window.matchMedia("(max-width:1100px)").matches){
+        posicaoCactos = 800;
+    }
+
+    if(window.matchMedia("(max-width:1600px)").matches){
+        posicaoCactos = 1000;
     }
 
     if (aleatorio < 1000){
