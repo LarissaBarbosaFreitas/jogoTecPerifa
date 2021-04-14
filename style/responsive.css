@@ -35,3 +35,14 @@ body .cactos {
 }
 
 }
+
+@media screen and (min-width:1000px) {
+
+.titulo {
+    font-size: 40px;
+    margin-top: 0;
+}
+
+
+
+}

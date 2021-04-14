@@ -9,6 +9,8 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
 
 *{
     margin: 0;
@@ -18,6 +20,8 @@
 
 body {
     background: rgb(230, 228, 228);
+    font-family: 'Bree Serif', serif;
+
 }
 
 /*Página Inicial*/
@@ -182,14 +186,15 @@ body {
 }
 
 .caixaPontos{
-    background-color:  rgb(31, 31, 31);
     width: 200px;
     height: 100px;
     margin-bottom: 20px;
+    border-color: rgb(31, 31, 31);
+    border-style:dashed;
 }
 
 .pontuacaoTexto{
-    color: #f0f0fa;
+    color:rgb(31, 31, 31);
     font-family: botao;
     text-align: center;
     line-height: 50px;
@@ -197,7 +202,7 @@ body {
 }
 
 #score{
-    color: #f0f0fa;
+    color: rgb(31, 31, 31);
     text-align: center;
     line-height: 30px;
 }
@@ -319,4 +324,113 @@ body {
 
 .textoBotaoPrincipal{
     text-decoration: none;
+}
+
+/*Menu*/
+.menu {
+    background-color:rgb(31, 31, 31);
+    height: 30px;
+    weight: 100%;
+}
+
+
+
+
+.logo {
+    color: #f0f0fa;
+    font-family: 'Bungee', cursive;
+    line-height: 30px;
+    margin-left: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+.home {
+    text-align: right;
+    float: right;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    color: #f0f0fa;
+    margin-right: 30px;
+    line-height: 30px;
+}
+
+.home :hover{
+    color: #00cc66;
+}
+
+/*footer*/
+
+.footer {
+    background-color:  rgb(31, 31, 31);
+    display: flex;
+    height: 50px;
+    bottom: 0;
+}
+
+.logoFooter{
+    line-height: 50px;
+
+}
+
+
+.fa-youtube {
+    background-color:  rgb(235, 43, 43);
+    height: 35px;
+    width: 35px;
+
+    font-size: 20px;
+    text-align: center;
+    line-height: 35px;
+
+    border-radius: 20px;
+}
+
+.fa-facebook{
+    background-color: #386db4;
+    height: 35px;
+    width: 35px;
+
+    font-size: 20px;
+    text-align: center;
+    line-height: 35px;
+
+    border-radius: 20px;
+}
+
+.fa-instagram {
+    background-color: #135789;
+    height: 35px;
+    width: 35px;
+
+    font-size: 20px;
+    text-align: center;
+    line-height: 35px;
+
+    margin-left: 10px;
+    margin-right: 10px;
+
+    border-radius: 20px;
+}
+
+.imgLogo{
+    margin-left: 20px;
+    height: 35px;
+    margin-top: 5px;
+}
+
+.redesSociais{
+    line-height: 50px;
+    text-align: right;
+    float: right;
+    align-items: flex-end;
+}
+
+.redeSocial {
+    float: right;
+    margin-left: 70%;
 }
