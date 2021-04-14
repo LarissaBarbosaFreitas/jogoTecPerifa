@@ -370,6 +370,9 @@ a {
     display: flex;
     height: 50px;
     bottom: 0;
+    align-content: flex-end;
+    position: absolute;
+    width: 100%;
 }
 
 .logoFooter{
@@ -388,6 +391,7 @@ a {
     line-height: 35px;
 
     border-radius: 20px;
+
 }
 
 .fa-facebook{
@@ -400,6 +404,8 @@ a {
     line-height: 35px;
 
     border-radius: 20px;
+
+
 }
 
 .fa-instagram {
@@ -415,16 +421,21 @@ a {
     margin-right: 10px;
 
     border-radius: 20px;
+
+
 }
 
 .imgLogo{
     margin-left: 20px;
     height: 35px;
     margin-top: 5px;
+
+
 }
 
 .redesSociais{
     line-height: 50px;
+
 
 }
 
@@ -432,4 +443,5 @@ a {
     float: right;
     margin-left: auto;
     margin-right: 10px;
+
 }
