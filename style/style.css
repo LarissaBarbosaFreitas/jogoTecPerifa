@@ -1,0 +1,322 @@
+@font-face { /*Titulo*/
+    font-family: game;
+    src: url(../fonte/Super\ Mario\ Bros..ttf);
+}
+
+@font-face { /*botão*/
+    font-family: botao;
+    src: url(../fonte/scoreboard.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(230, 228, 228);
+}
+
+/*Página Inicial*/
+.fundoJogo {
+    background-image: linear-gradient(rgba(214, 214, 214, 0.4), rgba(46, 41, 90, 0.5)100%),url(../img/principal.PNG);
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+
+    width: 100%;
+    height: 500px;
+
+    padding-top: 20px;
+
+}
+
+.caixaInicio{
+    line-height:100px;
+}
+
+
+
+
+/*JOGO*/
+#game{
+    height: 500px;
+    width: 100%;
+    display: flex;
+}
+
+
+.dino {
+    width: 100px;
+    height: 100px;
+    /*background-image: url(./img/perso.gif) ;*/
+    position: absolute; /*forma que os elementos vão se posicionar no html*/
+    /*absolute: o elemento ficará na posição definida independente dos elementos a sua volta */
+    bottom: 0; /*o elemento ficará baixo*/
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.cactos {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 0;
+    background-image: url(../img/bob.gif);
+    background-size: cover;
+    margin-bottom: 10px;
+
+}
+
+
+
+@keyframes slideright { /*Desliza para direita*/
+    from {
+        background-position: 70000%;
+    }
+    to {
+        background-position: 0;
+    }
+}
+
+.background {
+    position: absolute;
+    align-content: center;
+    justify-content: center;
+    background-image: url(../img/fundo3.gif);
+    background-repeat: repeat-x; /*repetição do background pelo eixo x*/
+    animation: slideright 800s infinite linear;
+    width: 100%;
+    height: 500px;
+}
+
+.lua {
+    background-image: linear-gradient(rgba(27, 46, 103, .10), rgba(27, 46, 103,.40 )100%), url(../img/lua2.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    margin-top: 30px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    height: 120px;
+    width: 129px;
+    
+}
+
+/*Pontuação*/
+
+.pontuacao{
+    height: 40px;
+    width: 100px;
+    margin: 30px;
+    float: right;
+}
+
+.tituloPontuacao {
+    color: white;
+    font-family: botao;
+    text-align: center;
+
+}
+
+#pontos {
+    color: white;
+    font-family: botao;
+    text-align: center;
+
+}
+
+#score {
+    color: black;
+    font-family: botao;
+    text-align: center;
+    font-size: 40px;
+}
+
+/*GAME OVER*/
+.titulo {
+    text-align: center;
+    color: rgb(31, 31, 31);
+
+    margin-top: 60px;
+
+    font-family: 'Bungee', cursive;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    font-weight: bold;
+
+
+}
+
+
+
+.fundoGameOver {
+    background: rgb(230, 228, 228);
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+
+    width: 100%;
+    height: 500px;
+
+    padding-top: 20px;
+}
+
+.caixaTexto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+}
+
+.caixaPontos{
+    background-color:  rgb(31, 31, 31);
+    width: 200px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.pontuacaoTexto{
+    color: #f0f0fa;
+    font-family: botao;
+    text-align: center;
+    line-height: 50px;
+
+}
+
+#score{
+    color: #f0f0fa;
+    text-align: center;
+    line-height: 30px;
+}
+
+.textoGameOver {
+    text-align: justify;
+    width: 300px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    
+}
+
+.textoGameOver2 {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 5px;
+    
+}
+
+
+
+/*BOTOES GAME OVER*/
+
+
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+}
+.botao {
+    height: 35px;
+    width: 200px;
+    background: #00cc66;
+    margin:10px;
+
+    border: none;
+    border-radius: 15px;
+
+    font-size: 15px;
+    text-decoration: none;
+
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+
+}
+
+.botaoPrincipal {
+    height: 50px;
+    width: 300px;
+    background: rgb(235, 43, 43);
+
+    margin-bottom: 5px;
+    
+    border: none;
+    border-radius: 20px;
+
+    font-size: 20px;
+    text-decoration: none;
+
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+
+
+.botao :hover{
+    background: black;
+    color: blanchedalmond;
+    border-radius: 15px;
+}
+
+.botaoPrincipal :hover{
+    background: black;
+    color: blanchedalmond;
+    border-radius: 20px;
+}
+
+.textoBotao{
+    font-size: 20px;
+    color: white;
+    font-family: botao;
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    line-height:35px;
+
+
+}  
+
+.textoBotao{
+    text-decoration: none;
+}
+
+.textoBotaoPrincipal{
+    font-size: 30px;
+    color: white;
+    font-family: botao;
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    line-height: 50px;
+
+}
+
+.fundoJogo .textoBotaoPrincipal{
+    font-size: 40px;
+}
+
+.textoBotaoPrincipal{
+    text-decoration: none;
+}

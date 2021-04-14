@@ -1,0 +1,37 @@
+@media screen and (max-width:800px) {
+    
+    @keyframes slide{ /*Desliza para direita*/
+        from {
+            background-position: 0;
+        }
+        to {
+            background-position: 70000%;
+        }
+    }
+
+body .background {
+    height:300px;
+    background-image: url(../img/fundo4.png);
+    animation: slide 300s infinite linear;
+    width: 100%;
+    background-size: cover;
+}
+
+body .lua {
+    height: 80px;
+    width: 85px;
+}
+
+body .dino {
+    width: 80px;
+    height: 80px;
+
+}
+
+
+body .cactos {
+    width: 45px;
+    height: 45px;
+}
+
+}
